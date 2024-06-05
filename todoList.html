@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.5, ,minimum-scale=1.0"
+        />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/todo.css" />
+    </head>
+    <body>
+        <header class="header">
+            <img src="./img/logo.png" alt="Logo" class="logo" />
+            <div class="header-right">
+                <div class="title"><span class="changeName"></span>的代辦</div>
+                <a href="#" class="logout">登出</a>
+            </div>
+        </header>
+        <div class="container">
+            <h1>TODO LIST</h1>
+            <div class="card input">
+                <input
+                    type="text"
+                    placeholder="請輸入待辦事項"
+                    id="inputText"
+                />
+                <a href="#" class="btn_add">+</a>
+            </div>
+            <div class="card_img" id="cardImg">
+                <img src="./img/empty.png" alt="#" />
+            </div>
+            <div class="card card_list" id="cardList">
+                <ul class="tab">
+                    <li class="active" data-tab="all">全部</li>
+                    <li data-tab="work">待完成</li>
+                    <li data-tab="done">已完成</li>
+                </ul>
+                <div class="cart_content">
+                    <ul class="list"></ul>
+                    <div class="list_footer">
+                        <p><span id="workNum">0</span>個待完成項目</p>
+                        <a href="#" id="removeData">清除已完成項目</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+        <script src="js/all.js"></script>
+        <script src="js/todo.js"></script>
+    </body>
+</html>
